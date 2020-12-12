@@ -1,0 +1,68 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>welcome page</title>
+		<script>
+
+	function show(){
+		var x='yes';
+		if(x==document.f1.esy.value)
+		{
+			window.open('ques.html');
+		}else{
+			alert("Redirect you to home page");
+			window.open('index.html');
+
+			}
+		}
+		</script>
+
+
+		<style >
+			body
+			{
+				background-image: url('3b98afa8d2b8680d4d377af89d05b8ab.jpg');
+				background-size: cover;
+				background-repeat: no-repeat;
+				width:100%;
+				height:100%;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+		<marquee behavior="alternate">
+   
+			<h1 style="text-align: center; font-size: 35px; color:black;">
+				Welcome To This Game
+			</h1>
+		</marquee>
+		</div>
+	<div style="text-align: center;">
+				<form name="f1">
+  
+
+				<div  id="s1"style="padding-top: 40px;margin-left: 30px; display: block;">
+
+				
+				<label for="name" style="color:#d9f3e7;font-size: 40px ;padding-top:60px!important; ">Enter your name:</label>
+				<input type="text"/ style="color:#5e376d;font-size: 21px;padding:3%;" ><br><br>
+
+				<label style="color:white; font-size: 45px;color:#e56997;"> Do You Want To play This Game</label><br><br>
+				<input type="radio" name="esy" value="yes"  onclick="show()"/>
+				<label for="yes" style="color:#e99380; font-size: 36px;">Yes</label>
+				<input type="radio" name="esy"  value="No" style="color:white;" onclick="show()"/>
+				<label for="No" style="color:#aa1945 ;font-size: 36px;" >No</label><br>
+			</div>
+		</form>
+				
+			</div>
+		</div>
+
+		
+			
+		
+	
+	</body>
+	</html> 

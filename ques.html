@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ques bank</title>
+	<script type="text/javascript">
+
+
+		var questions=["do I meet my friends on sunday?",
+		"Am I a good person?",
+		" Is there anything else you think I need to know?",
+		" Where is my career going? ",
+		"did I hear a good news today?",
+		"will I be  happy today?",
+		"Are you doing what you truly want to do?",
+		"Will I Be Covid positive in future"
+		];
+
+		var answers=['It is certain',
+			'It is decidedly so',
+			'Reply hazy try again',
+			'Cannot predict now',
+			'Do not count on it',
+			'My sources say no',
+			'Outlook not so good',
+			'Signs point to yes'];
+
+		var i=0;
+		function move(){
+			var ar=Math.floor(Math.random() * 8);
+			while(i<8){
+				 document.getElementById("answer").innerHTML="";
+				document.getElementById("question").innerHTML=questions[i];
+				setTimeout(function(){ document.getElementById("answer").innerHTML=answers[ar]; }, 3000);
+
+
+				
+				break;
+			}
+			i++;
+		}
+
+	</script>
+
+	<style type="text/css">
+		body{
+			background-image:url('218498-675x450-Question-mark.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			width:100%;
+			height:auto;
+	</style>
+</head>
+<body>
+	<div>
+<h1 style="text-align: center; font-size:30px;"> So Let Start The Questions!!</h1>
+	</div>
+	<div style="padding-top: 20px;">
+<div class="container"  style=" width:60%; height:300px;background-color: black;opacity:.8;text-align: center;" >
+	<p style="color:red; font-size:30px;"><i> click on button To start</i></p>
+		<label for ="name" id="question" style="font-size: 30px; text-align: center; color:white; padding-top: 10%;"></label><br>
+	
+		<label for="ans" id="answer" style="font-size:35px; color:brown;font-family:Times, Times New Roman, Georgia, serif;margin-left: 30px; text-align: center; padding-top: 10%;"><br>
+		</label><br><br>
+		<input type="button" value="Continue"  style="font-size:30px; padding: 20px;  border-radius:50%;" onclick="move()">
+
+
+
+		
+
+	</div>
+</div>
+
+</body>
+</html>
